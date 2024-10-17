@@ -1,0 +1,133 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    display: flex;
+}
+
+#background-image {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: block;
+  background-image: linear-gradient(rgba(0, 145, 255, 0.284), rgba(6, 8, 74, 0.645)), url('images/globe-2.jpg');
+  background-size: cover;
+  background-position: top;
+  width: 100%;
+  height: 400px;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  height: 400px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+h1 {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 48px;
+    margin-bottom: 12px;
+}
+
+h3 {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#buttons {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+button {
+    align-items: center;
+    text-transform: uppercase;
+    padding: 12px 12px;
+    border: none;
+    background-color: rgb(167, 79, 250);
+    color: white;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: blueviolet;
+}
+
+#order-button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#order-button img {
+    display: flex;
+    align-items: center;
+    height: 21px;
+    width: 20px;
+    padding: 9px;
+    background-color: rgb(167, 79, 250);
+}
+
+.arrow-down::after {
+    content: url(images/arrow-down-a-z-solid\ 1.svg);
+}
+
+.arrow-up::after {
+    content: url(images/arrow-up-z-a-solid\ 1.svg);
+}
+
+#input {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: black;
+}
+
+input {
+    width: 500px;
+    margin: 24px 0px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 16px;
+    color: black;
+}
+
+#search-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    margin: 24px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    background-image: linear-gradient(rgba(0, 145, 255, 0.284), rgba(6, 8, 74, 0.645)), url('images/map_image.jpg');
+    background-size: cover;
+    background-position: center;
+}
